@@ -21,6 +21,21 @@ public class lab3Runner {
         }
         System.out.print("\nBoyer Moore (simple): " + Boyer_Moore(line, pref));
         System.out.print("\nKMP: " + KMP(line, pref));
+        
+        //Пятнашки
+        int[][] blocks = new int[][]{{1, 2, 3, 4}, {5, 6, 7, 8}, {13, 19, 11, 12}, {10, 14, 15, 0}}
+        if(Pyatnashki.canSolve(blocks)){
+            System.out.println("Solvable");
+            Board initial = new Board(blocks);
+            Astar solver = new Astar(initial);
+
+            System.out.println("Minimum number of moves = " + solver.moves());
+            for (Board board : solver.solution())
+                System.out.println(board);
+        }
+        else{
+            System.out.println("Unsolvable");
+        }
     }
 
     public static int[] prefixFunction(String s) {
