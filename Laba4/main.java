@@ -20,9 +20,39 @@ public class main{
 
             System.out.println(ex.getMessage());
         }
+        System.out.println("First task");
         first();
-
-        //nineth();
+        System.out.println();
+        System.out.println("Second task");
+        second();
+        System.out.println();
+        System.out.println("Third task");
+        third();
+        System.out.println();
+        System.out.println();
+        System.out.println("Fourth task");
+        fourth();
+        System.out.println();
+        System.out.println("Fifth task");
+        fifth();
+        System.out.println();
+        System.out.println("Sixth task");
+        sixth();
+        System.out.println();
+        System.out.println("Seventh task");
+        seventh();
+        System.out.println();
+        System.out.println("Eighth task");
+        eighth();
+        System.out.println();
+        System.out.println("Ninth task");
+        ninth();
+        System.out.println();
+        System.out.println("Tenth task");
+        tenth();
+        System.out.println();
+        System.out.println("Eleventh task");
+        eleventh();
     }
 
     static void first() throws Exception {
